@@ -1,4 +1,4 @@
-@tailwind base;
+  @tailwind base;
   @tailwind components;
   @tailwind utilities;
 
@@ -70,7 +70,99 @@
     * {
       @apply border-border;
     }
+
     body {
       @apply bg-background text-foreground;
+    }
+
+    h1{
+      @apply text-4xl lg:text-7xl font-semibold pb-4 leading-snug underline underline-offset-8 decoration-orange-500
+    }
+
+    .accordionStyle{
+      @apply text-2xl lg:text-4xl lg:text-right whitespace-nowrap
+    }
+  }
+
+  .text-4xl lg:text-7xl font-semibold pb-4 leading-snug underline underline-offset-8 decoration-orange-500
+
+  /* animate typing text */
+  .animated-text span::before {
+    content: "Campaigns";
+    color: orange;
+    animation: words 20s 1;
+  }
+
+  .animated-text span::after {
+    content: "";
+    position: absolute;
+    width: calc(100%+8px);
+    height: 100%;
+    background-color: #fff;
+    border-left: 4px solid orange;
+    top: 2px;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) 1;
+  }
+
+  @keyframes cursor {
+    to {
+      border-left: 4px solid orangered;
+    }
+  }
+
+  @keyframes words {
+
+    0%,
+    20% {
+      content: "Branding";
+    }
+
+    21%,
+    40% {
+      content: "Advertising";
+    }
+
+    41%,
+    60% {
+      content: "Social Media";
+    }
+
+    61%,
+    80% {
+      content: "Content Marketing";
+    }
+
+    81%,
+    100% {
+      content: "Campaigns";
+    }
+  }
+
+  @keyframes typing {
+
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
+      width: 0;
+    }
+
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
+      width: calc(100% + 8px);
     }
   }
