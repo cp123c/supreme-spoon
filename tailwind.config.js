@@ -19,7 +19,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'home-background': "url('/city.jpg')",
-        'home-grid-bg1': "url('/digital.jpg')",
+        'home-grid-bg1': "url('/home.jpg')",
         'home-grid-bg2': "url('/digital1.jpg')",
         'home-grid-bg3': "url('/digital2.jpg')",
         'home-grid-bg4': "url('/digital3.jpg')",

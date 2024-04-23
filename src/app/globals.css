@@ -13,7 +13,7 @@
       --popover: 0 0% 100%;
       --popover-foreground: 222.2 84% 4.9%;
 
-      --primary: 222.2 47.4% 11.2%;
+      --primary: 29, 100%, 50%;
       --primary-foreground: 210 40% 98%;
 
       --secondary: 210 40% 96.1%;
@@ -45,7 +45,7 @@
       --popover: 222.2 84% 4.9%;
       --popover-foreground: 210 40% 98%;
 
-      --primary: 210 40% 98%;
+      --primary: 29, 100%, 50%;
       --primary-foreground: 222.2 47.4% 11.2%;
 
       --secondary: 217.2 32.6% 17.5%;
@@ -76,20 +76,34 @@
     }
 
     h1{
-      @apply text-4xl lg:text-7xl font-semibold pb-4 leading-snug underline underline-offset-8 decoration-orange-500
+      @apply text-2xl sm:text-3xl lg:text-7xl font-semibold lg:pb-4 leading-snug underline underline-offset-8 decoration-primary
     }
 
     .accordionStyle{
-      @apply text-2xl lg:text-4xl lg:text-right whitespace-nowrap
+      @apply text-lg sm:text-2xl lg:text-4xl lg:text-right whitespace-nowrap
+    }
+
+    .accordionStyleContent{
+      @apply sm:text-lg  lg:text-2xl 
+    }
+
+    .pixelWithImage{
+      @apply overflow-hidden flex flex-1 items-center justify-center bg-home-grid-bg1 bg-cover bg-no-repeat bg-left bg-fixed
+    }
+
+    .pixelNormal{
+      @apply overflow-hidden flex flex-1 items-center justify-center
+    }
+
+    .whyUsWrap{
+      @apply px-4 py-2 h-full w-full lg:h-[300px] lg:w-[400px] lg:border-4 border-primary flex flex-col
     }
   }
-
-  .text-4xl lg:text-7xl font-semibold pb-4 leading-snug underline underline-offset-8 decoration-orange-500
 
   /* animate typing text */
   .animated-text span::before {
     content: "Campaigns";
-    color: orange;
+    color: #FF7B00;
     animation: words 20s 1;
   }
 
@@ -99,7 +113,7 @@
     width: calc(100%+8px);
     height: 100%;
     background-color: #fff;
-    border-left: 4px solid orange;
+    border-left: 4px solid #FF7B00;
     top: 2px;
     right: -8px;
     animation: cursor .8s infinite, typing 20s steps(14) 1;
@@ -107,7 +121,7 @@
 
   @keyframes cursor {
     to {
-      border-left: 4px solid orangered;
+      border-left: 4px solid #FF7B00;
     }
   }
 
