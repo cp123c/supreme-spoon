@@ -76,7 +76,7 @@
     }
 
     h1{
-      @apply text-2xl sm:text-3xl lg:text-7xl font-semibold lg:pb-4 leading-snug underline underline-offset-8 decoration-primary
+      @apply text-2xl sm:text-3xl lg:text-6xl font-semibold lg:pb-4 leading-snug underline underline-offset-8 decoration-primary
     }
 
     .accordionStyle{
@@ -114,7 +114,7 @@
     height: 100%;
     background-color: #fff;
     border-left: 4px solid #FF7B00;
-    top: 2px;
+    top: 0px;
     right: -8px;
     animation: cursor .8s infinite, typing 20s steps(14) 1;
   }
